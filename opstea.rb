@@ -5,21 +5,21 @@
 class Opstea < Formula
   desc "Multi-host SSH operations orchestrator with TUI, CLI, and SQLite audit trail"
   homepage "https://github.com/AitorDuran/opstea"
-  version "0.8.0"
+  version "0.8.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/AitorDuran/opstea/releases/download/v0.8.0/opstea_0.8.0_darwin_amd64.tar.gz"
-      sha256 "f3e623e92b02fbf8541aef7ba965734df78b8f4ced7d772d5da72d1d75fdb87c"
+      url "https://github.com/AitorDuran/opstea/releases/download/v0.8.1/opstea_0.8.1_darwin_amd64.tar.gz"
+      sha256 "9a55d4c9a13430e2a96544289e9138e69d0d130d0fd48ffb099df091ce055d49"
 
       define_method(:install) do
         bin.install "opstea"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/AitorDuran/opstea/releases/download/v0.8.0/opstea_0.8.0_darwin_arm64.tar.gz"
-      sha256 "57211abb82b0a054013a680ad89bb3beda2ec263afa6d81203f311a8960fdec6"
+      url "https://github.com/AitorDuran/opstea/releases/download/v0.8.1/opstea_0.8.1_darwin_arm64.tar.gz"
+      sha256 "932211d5d952270f5012a461f2d181f73348ae368794f49c7ad7894af19cdc8d"
 
       define_method(:install) do
         bin.install "opstea"
@@ -29,15 +29,15 @@ class Opstea < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/AitorDuran/opstea/releases/download/v0.8.0/opstea_0.8.0_linux_amd64.tar.gz"
-      sha256 "fe268154ab16ab32d1ac0d05dc06841965ba27ff1b6204ee501ce6c7c476f1dc"
+      url "https://github.com/AitorDuran/opstea/releases/download/v0.8.1/opstea_0.8.1_linux_amd64.tar.gz"
+      sha256 "5bdc0699297cf7c93e8bb09541d5afa45afd27e51b376a4c8253f78aabfbefc4"
       define_method(:install) do
         bin.install "opstea"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/AitorDuran/opstea/releases/download/v0.8.0/opstea_0.8.0_linux_arm64.tar.gz"
-      sha256 "d81d9b1faf9c1935c52de3b94cc64eef3b42d0ddbcce432a61b30ef91f881cfa"
+      url "https://github.com/AitorDuran/opstea/releases/download/v0.8.1/opstea_0.8.1_linux_arm64.tar.gz"
+      sha256 "e9879a331fa4e01e2d2f2169b37ecf185c58f80f38300050048ad4973bccac32"
       define_method(:install) do
         bin.install "opstea"
       end
